@@ -10,12 +10,12 @@ I denne oppgaven skal vi lære litt om hvordan vi kan bruke lister i Python.
 
 # Steg 1: Opprette og legge til ting i en liste {.activity}
 ## Sjekkliste {.check}
-+ Vi begynner helt enkelt. Disse fire linjene i python lager først en tom liste som vi så putter inn verdiene 5 og 7. "liste" vil nå huske at den inneholder 5 og 7 til vi endrer hva den skal huske.
++ Vi begynner helt enkelt. Disse fire linjene i python lager først en tom liste som vi så putter inn verdiene 5 og 7. "liste" vil nå huske at den inneholder 5 og 7 til vi endrer hva den skal huske. Du kan kalle listen hva du vil.
 
 
 **Tips:** Du trenger ikke skrive det som står bak # - tegnet i koden under:
 ```python3	
-liste = []			# Denne linjen oppretter en liste som heter 'liste'
+liste = []			# Denne linjen oppretter en tom liste som heter 'liste'
 liste.append(5)		# .append() legger til en verdi bakerst i listen
 liste.append(7)
 
@@ -30,7 +30,7 @@ Vi kan også legge inn verdier i listen helt fra starten av:
 liste = [5, 7]
 ```
 
-+ Lister i python er null-indeksert. Dette betyr at hver posisjon i listen har et tall som adresse og at adressene eller posisjonene starter på 0 og øker med 1 og 1. I vårt tilfelle har 5 posisjon 0, mens 7 har posisjon 1.
++ Lister i python er null-indeksert. Dette betyr at hver posisjon i listen har et tall som adresse og at adressene (eller posisjonene) starter på 0 og øker med en og en. I vårt tilfelle har 5 posisjon 0, mens 7 har posisjon 1.
 
 Vi bruker `[]` rett etter listen sitt navn for å finne ut hvilket tall som er på en bestemt posisjon.
 
@@ -46,15 +46,16 @@ tall2 = liste[1]
 
 print("Det første tallet i listen er " + str(tall1) + " og det andre tallet i listen er " + str(tall2))
 ```
+**Tips:** `str(5)` gjør tallet 5 om til en streng som er tallet 5, denne kan nå printes i kombinasjon med andre strenger.
 
-+ Du har nå lært å lage en liste i Python prøv selv å lage flere lister med forskjellige navn og legg inn dine egne verdier.
++ Du har nå lært å lage en liste i Python, prøv selv å lage flere lister med forskjellige navn og legg inn dine egne verdier.
 
-+ Man kan også legge inn ord og bokstaver i en liste. En sekvens med tegn, slik som et ord, kalles en streng. Lag lister som inne holder strenger (String på engelsk).
++ Man kan også legge inn ord og bokstaver i en liste. En sekvens med tegn, slik som et ord, kalles en streng. Lag lister som inneholder strenger (String på engelsk).
 
 
 # Steg 2: Finne største og minste tall i en liste {.activity}
 
-Nå skal vi se hvordan vi kan finne ut hvilket tall som er størst og minst i en liste.
+Nå skal vi lære en måte hvordan man kan finne ut hvilket tall som er størst og minst i en liste.
 
 ## Sjekkliste {.check}
 
@@ -66,8 +67,8 @@ Eksempel:
 
 + En løkke er en måte man kan gjøre det samme om igjen flere ganger. For å finne det minste tallet i en liste har vi lyst til å sammenligne alle tallene vi har i listen med et annet tall. 
 Start med å lage en løkke som skriver ut alle tallene i listen en etter en. 
-**Tips 1:** `len(liste1)` finner ut hvor mange tall som er i listen som heter liste1. 
-**Tips 2:** `str(5)` gjør tallet 5 om til en streng som er tallet 5, denne kan nå printes.
+**Tips:** `len(liste1)` finner ut hvor mange tall som er i listen som heter liste1. 
+
 
 #### Løsing:
 
