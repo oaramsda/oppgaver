@@ -122,6 +122,3 @@ print("Det minste tallet i listen er "+ str(minste))
 
 ## Utfordring: Regn ut gjennomsnitt {.challenge}
 Lag et program som regner ut gjennomsnittsverdien til alle verdiene i en liste.
-
-## Utfordring: Kjempestor liste {.challenge}
-Prøv å lag en kjempe stor liste og finn det minste og største tallet i den. 
