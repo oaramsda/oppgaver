@@ -41,7 +41,7 @@ liste.append(7)
 
 print(liste)
 
-tall1 = liste[0]        #Vi finner her ut hvilket tall som er på posisjon 0
+tall1 = liste[0]        # Vi finner her ut hvilket tall som er på posisjon 0
 tall2 = liste[1]
 
 print("Det første tallet i listen er " + str(tall1) + " og det andre tallet i listen er " + str(tall2))
@@ -79,29 +79,15 @@ mange_tall.append(74)
 mange_tall.append(45)
 mange_tall.append(111)
 
-antall_tall = len(mange_tall) 		#'antall_tall' husker fra nå av hvor mange tall som er i listen vår
+antall_tall = len(mange_tall) 		# 'antall_tall' husker fra nå av hvor mange tall som er i listen vår
 
 for posisjon in range(antall_tall):
-    tall = mange_tall[posisjon]		#'tall' er tallet som ligger på posisjonen i listen med adressen lik posisjon. 
-    tall_som_streng = str(tall)		#Gjør om tallet til en streng siden Print() kan kun printe stenger.
-    print(tall_som_streng)			#Printer stengen
+    tall = mange_tall[posisjon]		# 'tall' er tallet som ligger på posisjonen i listen med adressen lik posisjon. 
+    print(tall)						# Printer tallet
 ```
 
-#### Kortere løsning:
 
-```python3
-mange_tall = [38, 55, 96] # Legger til noen verdier helt fra starten
-
-mange_tall.append(15)		# Legger til flere verdier
-mange_tall.append(74)
-mange_tall.append(45)
-mange_tall.append(111)
-
-for posisjon in range(len(mange_tall)):
-    print(str(mange_tall[posisjon]))
-```
-
-Forstår du at begge løsningene gjør det samme bare at den korte har færre "mellom regninger"?
+#### If-Setninger:
 
 + Nå kommer vi til å få bruk for det som heter "if-setninger". "If" betyr som du vet "hvis" på engelsk. En "if-setninger" sjekker om en påstand er sann eller ikke. Hvis påstanden er  sann gjør koden en ting hvis den ikke er sann gjør den noe annet.
 
@@ -131,7 +117,10 @@ for posisjon in range(len(mange_tall)):
 print("Det minste tallet i listen er "+ str(minste))
 ```
 
++ Lag et nytt program som finner det største tallet i listen.
 
+## Utfordring: Regn ut gjennomsnitt {.challenge}
+Lag et program som regner ut gjennomsnittsverdien til alle verdiene i en liste.
 
 ## Utfordring: Kjempestor liste {.challenge}
 Prøv å lag en kjempe stor liste og finn det minste og største tallet i den. 
